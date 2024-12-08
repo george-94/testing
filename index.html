@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solsystemet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Serif+Oriya:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Serif+Oriya:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Noto+Serif+Oriya:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Radley:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dongle&family=Funnel+Display:wght@300..800&family=Noto+Serif+Oriya:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Radley:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <!-- STARS -->
+    <canvas id="starCanvas"></canvas>
+
+
+    <!-- SEARCH BAR -->
+    <section class="search-container">
+        <span class="search-bar-wrapper">
+        <input type="text" id="search-bar" placeholder="Sök efter en planet...">
+        <i class="fa fa-search"></i>
+        <button id="search-button"></button>
+        <button id="clear-button">RENSA</button>
+        </span>
+        <ul id="search-result"></ul>
+    </section>
+
+    <main id="main"> 
+
+    <!-- PLANETS DRAWINGS -->
+        <section class="planets-drawings">
+            <section class="sun" title="Solen">
+                <span class="tooltip-text">Fun Fact:<br>Solen är ca 4,6 miljarder år gammal.</span>
+            </section>
+            <section class="mercury" title="Merkurius">
+                <span class="tooltip-text">Fun Fact:<br>En dag på Merkurius är dubbelt så långt som ett år på jorden.</span>
+            </section>
+            <section class="venus" title="Venus">
+                <span class="tooltip-text">Fun Fact:<br>Venus kallas ibland "jordens tvilling."</span>
+            </section>
+            <section class="earth" title="Jorden">
+                <span class="tooltip-text">Fun Fact:<br>Jorden är den ända <b>kända</b> planeten med liv.</b><br></span>
+            </section>
+            <section class="mars" title="Mars">
+                <span class="tooltip-text">Fun Fact:<br>En dag på Mars är 40 minuter längre en en dag på Jorden.</span>
+            </section>
+            <section class="jupiter" title="Jupiter">
+                <span class="tooltip-text">Fun Fact:<br>Jupiter är den största planeten i solsystemet!</span>
+            </section>
+            <section class="saturn" title="Saturnus">
+                <span class="tooltip-text">Fun Fact:<br>Stormar på Saturnus kan vara i månader eller år.</span>
+                <div class="ring2"></div>
+            </section>
+            <section class="uranus" title="Uranus">
+                <span class="tooltip-text">Fun Fact:<br>Uranus har bara två årstider, sommar och vinter!</span>
+            </section>
+            <section class="neptune" title="Neptunus">
+                <span class="tooltip-text">Fun Fact:<br>Neptunus är den blåsigaste planeten i solsystemet.</span>
+            </section>
+        </section>
+
+        <!-- SOLAR SYSTEM INFO -->
+         <section id="planet-info">
+            <h1 id="heading">Välkommen till Solsystemet</h1>
+            <p id="para1">Ready for takeoff in 3...2...1... &#128640;</p>
+            <ul id="planet-list"></ul>
+        </section>
+
+    </main>
+    
+
+<!-- JAVASCRIPT-FIL -->
+    <script src="script.js"></script> 
+</body>
+</html>
